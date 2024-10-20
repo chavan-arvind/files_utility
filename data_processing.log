@@ -1,0 +1,125 @@
+2024-10-20 12:57:30,370 - INFO - Setting up test environment...
+2024-10-20 12:57:30,379 - INFO - Database employee_test_db created successfully
+2024-10-20 12:57:30,388 - INFO - Test table created successfully
+2024-10-20 12:57:30,388 - INFO - Processing files...
+2024-10-20 12:57:30,388 - INFO - Processing directory: /Users/shivraj/Downloads/data/
+2024-10-20 12:57:30,451 - INFO - Successfully processed annual-enterprise-survey-2023-financial-year-provisional.csv
+2024-10-20 12:57:30,451 - INFO - Saving to database...
+2024-10-20 12:57:30,470 - INFO - Database connection test successful
+2024-10-20 12:57:30,476 - INFO - Table annual_enterprise_survey_2023_financial_year_provisional created successfully
+2024-10-20 12:57:31,647 - INFO - Successfully saved 50985 records to table annual_enterprise_survey_2023_financial_year_provisional
+2024-10-20 12:57:31,647 - INFO - Processing complete! Check data_processing.log for details.
+2024-10-20 12:59:09,100 - INFO - Setting up test environment...
+2024-10-20 12:59:09,111 - INFO - Database employee_test_db created successfully
+2024-10-20 12:59:09,118 - INFO - Test table created successfully
+2024-10-20 12:59:09,118 - INFO - Starting to monitor directory: /Users/shivraj/Downloads/data/
+2024-10-20 12:59:09,118 - INFO - Found 1 new file(s) to process.
+2024-10-20 12:59:09,195 - INFO - Database connection test successful
+2024-10-20 12:59:09,203 - INFO - Table annual_enterprise_survey_2023_financial_year_provisional created successfully
+2024-10-20 12:59:10,425 - INFO - Successfully saved 50985 records to table annual_enterprise_survey_2023_financial_year_provisional
+2024-10-20 12:59:10,425 - INFO - Successfully processed and saved annual-enterprise-survey-2023-financial-year-provisional.csv
+2024-10-20 13:00:10,430 - INFO - Found 1 new file(s) to process.
+2024-10-20 13:00:10,780 - INFO - Database connection test successful
+2024-10-20 13:00:10,799 - INFO - Table business_operations_survey_2023_CSV_notes created successfully
+2024-10-20 13:00:10,818 - ERROR - Error saving to database table business_operations_survey_2023_CSV_notes: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'Unnamed__1' at row 12
+[SQL: INSERT INTO `business_operations_survey_2023_CSV_notes` (`Footnotes`, `Unnamed__1`, `Unnamed__2`) VALUES (%(Footnotes)s, %(Unnamed__1)s, %(Unnamed__2)s)]
+[parameters: [{'Footnotes': 1, 'Unnamed__1': 'The Business Operations Survey samples businesses with six or more employees. For more information on the businesses included, see:', 'Unnamed__2': 'BOS Series Data Collection  ̶  DataInfo+'}, {'Footnotes': 2, 'Unnamed__1': 'For more information about the number of businesses in New Zealand (by industry or employment), please refer to:', 'Unnamed__2': 'New Zealand business demography'}, {'Footnotes': 3, 'Unnamed__1': 'See DataInfo+ for questionnaires, and more explaination of the definitions, inclusions and exclusions for each activity.', 'Unnamed__2': 'DataInfo+'}, {'Footnotes': 4, 'Unnamed__1': 'Business size is defined by rolling mean employment (RME). For more information on RME, see the Data Dictionary in', 'Unnamed__2': 'BOS Concepts  ̶  DataInfo+'}, {'Footnotes': 5, 'Unnamed__1': 'Results for the mining and electricity, gas, water, & waste services industries should be treated with caution due to the small numbers of businesses in these categories.', 'Unnamed__2': None}, {'Footnotes': 6, 'Unnamed__1': 'Counts of businesses are randomly rounded to base 3 to protect confidentiality. As a result, actual numbers may differ from those stated. Due to rounding, some numbers may not sum to stated totals.', 'Unnamed__2': None}, {'Footnotes': 7, 'Unnamed__1': 'Dollar values are rounded to nearest $1,000. As a result, actual numbers may differ from those stated. Due to rounding, some numbers may not sum to stated totals.', 'Unnamed__2': None}, {'Footnotes': 8, 'Unnamed__1': 'Percentages are of total number of businesses in each business size or industry in scope of the Business Operations Survey. Percentages are based on unrounded numbers.', 'Unnamed__2': None}  ... displaying 10 of 20 total bound parameter sets ...  {'Footnotes': None, 'Unnamed__1': None, 'Unnamed__2': None}, {'Footnotes': 'Source: Stats NZ', 'Unnamed__1': None, 'Unnamed__2': None}]]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-20 13:00:10,818 - ERROR - Error processing business-operations-survey-2023-CSV-notes.xlsx: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'Unnamed__1' at row 12
+[SQL: INSERT INTO `business_operations_survey_2023_CSV_notes` (`Footnotes`, `Unnamed__1`, `Unnamed__2`) VALUES (%(Footnotes)s, %(Unnamed__1)s, %(Unnamed__2)s)]
+[parameters: [{'Footnotes': 1, 'Unnamed__1': 'The Business Operations Survey samples businesses with six or more employees. For more information on the businesses included, see:', 'Unnamed__2': 'BOS Series Data Collection  ̶  DataInfo+'}, {'Footnotes': 2, 'Unnamed__1': 'For more information about the number of businesses in New Zealand (by industry or employment), please refer to:', 'Unnamed__2': 'New Zealand business demography'}, {'Footnotes': 3, 'Unnamed__1': 'See DataInfo+ for questionnaires, and more explaination of the definitions, inclusions and exclusions for each activity.', 'Unnamed__2': 'DataInfo+'}, {'Footnotes': 4, 'Unnamed__1': 'Business size is defined by rolling mean employment (RME). For more information on RME, see the Data Dictionary in', 'Unnamed__2': 'BOS Concepts  ̶  DataInfo+'}, {'Footnotes': 5, 'Unnamed__1': 'Results for the mining and electricity, gas, water, & waste services industries should be treated with caution due to the small numbers of businesses in these categories.', 'Unnamed__2': None}, {'Footnotes': 6, 'Unnamed__1': 'Counts of businesses are randomly rounded to base 3 to protect confidentiality. As a result, actual numbers may differ from those stated. Due to rounding, some numbers may not sum to stated totals.', 'Unnamed__2': None}, {'Footnotes': 7, 'Unnamed__1': 'Dollar values are rounded to nearest $1,000. As a result, actual numbers may differ from those stated. Due to rounding, some numbers may not sum to stated totals.', 'Unnamed__2': None}, {'Footnotes': 8, 'Unnamed__1': 'Percentages are of total number of businesses in each business size or industry in scope of the Business Operations Survey. Percentages are based on unrounded numbers.', 'Unnamed__2': None}  ... displaying 10 of 20 total bound parameter sets ...  {'Footnotes': None, 'Unnamed__1': None, 'Unnamed__2': None}, {'Footnotes': 'Source: Stats NZ', 'Unnamed__1': None, 'Unnamed__2': None}]]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-20 13:01:10,822 - INFO - No new files to process.
+2024-10-20 13:01:52,868 - INFO - Program stopped by user.
+2024-10-20 13:01:54,484 - INFO - Setting up test environment...
+2024-10-20 13:01:54,493 - INFO - Database employee_test_db created successfully
+2024-10-20 13:01:54,500 - INFO - Test table created successfully
+2024-10-20 13:01:54,500 - INFO - Starting to monitor directory: /Users/shivraj/Downloads/data/
+2024-10-20 13:01:54,501 - INFO - Found 2 new file(s) to process.
+2024-10-20 13:01:54,611 - INFO - Database connection test successful
+2024-10-20 13:01:55,829 - INFO - Successfully saved 50985 records to table annual_enterprise_survey_2023_financial_year_provisional
+2024-10-20 13:01:55,829 - INFO - Successfully processed and saved annual-enterprise-survey-2023-financial-year-provisional.csv
+2024-10-20 13:01:55,931 - INFO - Database connection test successful
+2024-10-20 13:01:55,941 - ERROR - Error saving to database table business_operations_survey_2023_CSV_notes: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'Unnamed__1' at row 12
+[SQL: INSERT INTO `business_operations_survey_2023_CSV_notes` (`Footnotes`, `Unnamed__1`, `Unnamed__2`) VALUES (%(Footnotes)s, %(Unnamed__1)s, %(Unnamed__2)s)]
+[parameters: [{'Footnotes': 1, 'Unnamed__1': 'The Business Operations Survey samples businesses with six or more employees. For more information on the businesses included, see:', 'Unnamed__2': 'BOS Series Data Collection  ̶  DataInfo+'}, {'Footnotes': 2, 'Unnamed__1': 'For more information about the number of businesses in New Zealand (by industry or employment), please refer to:', 'Unnamed__2': 'New Zealand business demography'}, {'Footnotes': 3, 'Unnamed__1': 'See DataInfo+ for questionnaires, and more explaination of the definitions, inclusions and exclusions for each activity.', 'Unnamed__2': 'DataInfo+'}, {'Footnotes': 4, 'Unnamed__1': 'Business size is defined by rolling mean employment (RME). For more information on RME, see the Data Dictionary in', 'Unnamed__2': 'BOS Concepts  ̶  DataInfo+'}, {'Footnotes': 5, 'Unnamed__1': 'Results for the mining and electricity, gas, water, & waste services industries should be treated with caution due to the small numbers of businesses in these categories.', 'Unnamed__2': None}, {'Footnotes': 6, 'Unnamed__1': 'Counts of businesses are randomly rounded to base 3 to protect confidentiality. As a result, actual numbers may differ from those stated. Due to rounding, some numbers may not sum to stated totals.', 'Unnamed__2': None}, {'Footnotes': 7, 'Unnamed__1': 'Dollar values are rounded to nearest $1,000. As a result, actual numbers may differ from those stated. Due to rounding, some numbers may not sum to stated totals.', 'Unnamed__2': None}, {'Footnotes': 8, 'Unnamed__1': 'Percentages are of total number of businesses in each business size or industry in scope of the Business Operations Survey. Percentages are based on unrounded numbers.', 'Unnamed__2': None}  ... displaying 10 of 20 total bound parameter sets ...  {'Footnotes': None, 'Unnamed__1': None, 'Unnamed__2': None}, {'Footnotes': 'Source: Stats NZ', 'Unnamed__1': None, 'Unnamed__2': None}]]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-20 13:01:55,941 - ERROR - Error processing business-operations-survey-2023-CSV-notes.xlsx: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'Unnamed__1' at row 12
+[SQL: INSERT INTO `business_operations_survey_2023_CSV_notes` (`Footnotes`, `Unnamed__1`, `Unnamed__2`) VALUES (%(Footnotes)s, %(Unnamed__1)s, %(Unnamed__2)s)]
+[parameters: [{'Footnotes': 1, 'Unnamed__1': 'The Business Operations Survey samples businesses with six or more employees. For more information on the businesses included, see:', 'Unnamed__2': 'BOS Series Data Collection  ̶  DataInfo+'}, {'Footnotes': 2, 'Unnamed__1': 'For more information about the number of businesses in New Zealand (by industry or employment), please refer to:', 'Unnamed__2': 'New Zealand business demography'}, {'Footnotes': 3, 'Unnamed__1': 'See DataInfo+ for questionnaires, and more explaination of the definitions, inclusions and exclusions for each activity.', 'Unnamed__2': 'DataInfo+'}, {'Footnotes': 4, 'Unnamed__1': 'Business size is defined by rolling mean employment (RME). For more information on RME, see the Data Dictionary in', 'Unnamed__2': 'BOS Concepts  ̶  DataInfo+'}, {'Footnotes': 5, 'Unnamed__1': 'Results for the mining and electricity, gas, water, & waste services industries should be treated with caution due to the small numbers of businesses in these categories.', 'Unnamed__2': None}, {'Footnotes': 6, 'Unnamed__1': 'Counts of businesses are randomly rounded to base 3 to protect confidentiality. As a result, actual numbers may differ from those stated. Due to rounding, some numbers may not sum to stated totals.', 'Unnamed__2': None}, {'Footnotes': 7, 'Unnamed__1': 'Dollar values are rounded to nearest $1,000. As a result, actual numbers may differ from those stated. Due to rounding, some numbers may not sum to stated totals.', 'Unnamed__2': None}, {'Footnotes': 8, 'Unnamed__1': 'Percentages are of total number of businesses in each business size or industry in scope of the Business Operations Survey. Percentages are based on unrounded numbers.', 'Unnamed__2': None}  ... displaying 10 of 20 total bound parameter sets ...  {'Footnotes': None, 'Unnamed__1': None, 'Unnamed__2': None}, {'Footnotes': 'Source: Stats NZ', 'Unnamed__1': None, 'Unnamed__2': None}]]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-20 13:02:55,947 - INFO - No new files to process.
+2024-10-20 13:03:18,111 - INFO - Program stopped by user.
+2024-10-20 13:03:20,261 - INFO - Setting up test environment...
+2024-10-20 13:03:20,272 - INFO - Database employee_test_db created successfully
+2024-10-20 13:03:20,280 - INFO - Test table created successfully
+2024-10-20 13:03:20,280 - INFO - Starting to monitor directory: /Users/shivraj/Downloads/data/
+2024-10-20 13:03:20,280 - INFO - Found 2 new file(s) to process.
+2024-10-20 13:03:20,367 - INFO - Sanitized table name: business-operations-survey-2023-CSV-notes -> t_businessoperationssurvey2023CSVnotes
+2024-10-20 13:03:20,386 - INFO - Database connection test successful
+2024-10-20 13:03:20,386 - INFO - Sanitized table name: t_businessoperationssurvey2023CSVnotes -> t_t_businessoperationssurvey2023CSVnotes
+2024-10-20 13:03:20,386 - INFO - Column name changed: Unnamed: 1 -> Unnamed__1
+2024-10-20 13:03:20,386 - INFO - Column name changed: Unnamed: 2 -> Unnamed__2
+2024-10-20 13:03:20,397 - INFO - Creating new table: t_t_businessoperationssurvey2023CSVnotes
+2024-10-20 13:03:20,404 - INFO - Sanitized table name: t_t_businessoperationssurvey2023CSVnotes -> t_t_t_businessoperationssurvey2023CSVnotes
+2024-10-20 13:03:20,414 - INFO - Table t_t_t_businessoperationssurvey2023CSVnotes created successfully
+2024-10-20 13:03:20,414 - INFO - Saving data to table: t_t_businessoperationssurvey2023CSVnotes
+2024-10-20 13:03:20,430 - INFO - Successfully saved 20 records to table t_t_businessoperationssurvey2023CSVnotes (original name: t_businessoperationssurvey2023CSVnotes)
+2024-10-20 13:03:20,430 - INFO - Successfully processed and saved business-operations-survey-2023-CSV-notes.xlsx
+2024-10-20 13:03:20,514 - INFO - Sanitized table name: annual-enterprise-survey-2023-financial-year-provisional -> t_annualenterprisesurvey2023financialyearprovisional
+2024-10-20 13:03:20,523 - INFO - Database connection test successful
+2024-10-20 13:03:20,524 - INFO - Sanitized table name: t_annualenterprisesurvey2023financialyearprovisional -> t_t_annualenterprisesurvey2023financialyearprovisional
+2024-10-20 13:03:20,532 - INFO - Creating new table: t_t_annualenterprisesurvey2023financialyearprovisional
+2024-10-20 13:03:20,540 - INFO - Sanitized table name: t_t_annualenterprisesurvey2023financialyearprovisional -> t_t_t_annualenterprisesurvey2023financialyearprovisional
+2024-10-20 13:03:20,548 - INFO - Table t_t_t_annualenterprisesurvey2023financialyearprovisional created successfully
+2024-10-20 13:03:20,548 - INFO - Saving data to table: t_t_annualenterprisesurvey2023financialyearprovisional
+2024-10-20 13:03:21,785 - INFO - Successfully saved 50985 records to table t_t_annualenterprisesurvey2023financialyearprovisional (original name: t_annualenterprisesurvey2023financialyearprovisional)
+2024-10-20 13:03:21,785 - INFO - Successfully processed and saved annual-enterprise-survey-2023-financial-year-provisional.csv
+2024-10-20 13:04:21,790 - INFO - No new files to process.
+2024-10-20 13:05:21,795 - INFO - No new files to process.
+2024-10-20 13:06:21,802 - INFO - No new files to process.
+2024-10-20 13:07:21,807 - INFO - No new files to process.
+2024-10-20 13:08:06,501 - INFO - Program stopped by user.
+2024-10-20 13:08:09,943 - INFO - Setting up test environment...
+2024-10-20 13:08:09,953 - INFO - Database employee_test_db created successfully
+2024-10-20 13:08:09,985 - INFO - Test table created successfully
+2024-10-20 13:08:09,985 - INFO - Starting to monitor directory: /Users/shivraj/Downloads/data/
+2024-10-20 13:08:09,985 - INFO - Found 2 new file(s) to process.
+2024-10-20 13:08:10,069 - INFO - Sanitized table name: business-operations-survey-2023-CSV-notes -> t_businessoperationssurvey2023CSVnotes
+2024-10-20 13:08:10,087 - INFO - Database connection test successful
+2024-10-20 13:08:10,087 - INFO - Sanitized table name: t_businessoperationssurvey2023CSVnotes -> t_t_businessoperationssurvey2023CSVnotes
+2024-10-20 13:08:10,088 - INFO - Column name changed: Unnamed: 1 -> Unnamed__1
+2024-10-20 13:08:10,088 - INFO - Column name changed: Unnamed: 2 -> Unnamed__2
+2024-10-20 13:08:10,096 - INFO - Creating new table: t_t_businessoperationssurvey2023CSVnotes
+2024-10-20 13:08:10,102 - INFO - Sanitized table name: t_t_businessoperationssurvey2023CSVnotes -> t_t_t_businessoperationssurvey2023CSVnotes
+2024-10-20 13:08:10,109 - INFO - Table t_t_t_businessoperationssurvey2023CSVnotes created successfully
+2024-10-20 13:08:10,110 - INFO - Saving data to table: t_t_businessoperationssurvey2023CSVnotes
+2024-10-20 13:08:10,124 - INFO - Successfully saved 20 records to table t_t_businessoperationssurvey2023CSVnotes (original name: t_businessoperationssurvey2023CSVnotes)
+2024-10-20 13:08:10,124 - INFO - Successfully processed and saved business-operations-survey-2023-CSV-notes.xlsx
+2024-10-20 13:08:10,204 - INFO - Sanitized table name: annual-enterprise-survey-2023-financial-year-provisional -> t_annualenterprisesurvey2023financialyearprovisional
+2024-10-20 13:08:10,213 - INFO - Database connection test successful
+2024-10-20 13:08:10,213 - INFO - Sanitized table name: t_annualenterprisesurvey2023financialyearprovisional -> t_t_annualenterprisesurvey2023financialyearprovisional
+2024-10-20 13:08:10,225 - INFO - Creating new table: t_t_annualenterprisesurvey2023financialyearprovisional
+2024-10-20 13:08:10,233 - INFO - Sanitized table name: t_t_annualenterprisesurvey2023financialyearprovisional -> t_t_t_annualenterprisesurvey2023financialyearprovisional
+2024-10-20 13:08:10,252 - INFO - Table t_t_t_annualenterprisesurvey2023financialyearprovisional created successfully
+2024-10-20 13:08:10,252 - INFO - Saving data to table: t_t_annualenterprisesurvey2023financialyearprovisional
+2024-10-20 13:08:11,482 - INFO - Successfully saved 50985 records to table t_t_annualenterprisesurvey2023financialyearprovisional (original name: t_annualenterprisesurvey2023financialyearprovisional)
+2024-10-20 13:08:11,482 - INFO - Successfully processed and saved annual-enterprise-survey-2023-financial-year-provisional.csv
+2024-10-20 13:09:11,483 - INFO - No new files to process.
+2024-10-20 13:09:48,051 - INFO - Program stopped by user.
+2024-10-20 13:09:56,310 - INFO - Setting up test environment...
+2024-10-20 13:09:56,320 - INFO - Database employee_test_db created successfully
+2024-10-20 13:09:56,337 - INFO - Generic table 'all_data' created successfully
+2024-10-20 13:09:56,337 - INFO - Starting to monitor directory: /Users/shivraj/Downloads/data/
+2024-10-20 13:09:56,337 - INFO - Found 2 new file(s) to process.
+2024-10-20 13:09:56,442 - INFO - Database connection test successful
+2024-10-20 13:09:56,473 - INFO - Saving data from file: annual-enterprise-survey-2023-financial-year-provisional.csv
+2024-10-20 13:10:03,185 - INFO - Successfully saved 50985 records from annual-enterprise-survey-2023-financial-year-provisional.csv
+2024-10-20 13:10:03,192 - INFO - Successfully processed and saved annual-enterprise-survey-2023-financial-year-provisional.csv
+2024-10-20 13:10:03,304 - INFO - Database connection test successful
+2024-10-20 13:10:03,306 - INFO - Saving data from file: business-operations-survey-2023-CSV-notes.xlsx
+2024-10-20 13:10:03,317 - INFO - Successfully saved 20 records from business-operations-survey-2023-CSV-notes.xlsx
+2024-10-20 13:10:03,317 - INFO - Successfully processed and saved business-operations-survey-2023-CSV-notes.xlsx
+2024-10-20 13:11:03,321 - INFO - No new files to process.
+2024-10-20 13:12:03,291 - INFO - No new files to process.
+2024-10-20 13:12:30,489 - INFO - Program stopped by user.

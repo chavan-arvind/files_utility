@@ -1,0 +1,20 @@
+# Database connections
+mysql-connector-python>=8.0.0
+SQLAlchemy>=2.0.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Excel file support
+openpyxl>=3.1.0
+xlrd>=2.0.0  # For older .xls files
+
+# CSV support (included in pandas, listed for clarity)
+python-csv>=0.0.1
+
+# Type hints support
+typing-extensions>=4.5.0
+
+# Optional: Progress bars for file processing
+tqdm>=4.65.0
